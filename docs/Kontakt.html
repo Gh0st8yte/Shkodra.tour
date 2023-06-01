@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kontakt</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .github-logos {
+      display: flex;
+    }
+
+    .github-logo {
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #fff; /* Set the background color to match your webpage */
+      border-radius: 50%; /* Creates a circular shape */
+      cursor: pointer;
+      outline: none; /* Remove the outline */
+      margin-right: 10px; /* Adjust the margin as needed to create space between the logos */
+    }
+
+    #logo1 {
+      background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+    }
+
+    #logo2 {
+      background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'); /* Replace with the desired image URL for the second logo */
+    }
+  </style>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: linear-gradient(45deg, #FFC700, #FF00D6, #00FFEE, #FF00D6);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .interactive-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .interactive-background__item {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      transform: translate(-50%, -50%);
+      pointer-events: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .interactive-background__item:hover {
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+  <div class="interactive-background">
+    <div class="interactive-background__item" style="top: 50%; left: 50%;"></div>
+    <!-- Add more interactive background items as needed -->
+  </div>
+</body>
+</html>
+
+  <script>
+    function redirectToGitHub(username) {
+      window.location.href = 'https://github.com/' + username;
+    }
+  </script>
+</head>
+<body>
+  <div class="github-logos">
+    <div id="logo1" class="github-logo" onclick="redirectToGitHub('Anonymous-af')"></div>
+    <div id="logo2" class="github-logo" onclick="redirectToGitHub('gersimata')"></div>
+  </div>
+</body>
+</html>
